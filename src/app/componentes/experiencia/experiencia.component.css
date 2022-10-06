@@ -1,0 +1,16 @@
+.row{
+    padding:20px
+}
+
+div{
+   background-color:#fcb7af; 
+}
+
+h1, h3{
+    display:inline;
+}
+
+div#nuevaexp{
+    display:inline;
+    align-content: flex-end;
+}
