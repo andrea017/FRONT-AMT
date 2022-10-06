@@ -8,7 +8,7 @@ import { Hys } from '../model/hys';
   providedIn: 'root'
 })
 export class HysService {
-  URL=environment.URL + 'skill/';
+  URL= 'https://backend-amt.herokuapp.com/skill/';
 
   constructor(private httpClient:HttpClient) { }
 

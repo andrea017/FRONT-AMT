@@ -9,7 +9,7 @@ import { Experiencia } from '../model/experiencia';
 })
 export class ExperienciaService {
 
-  expURL=environment.URL + 'explab/';
+  expURL='https://backend-amt.herokuapp.com/explab/';
 
 
   constructor(private httpClient: HttpClient) { }

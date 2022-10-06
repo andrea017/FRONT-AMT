@@ -9,7 +9,7 @@ import { Educacion } from '../model/educacion';
 })
 export class EducacionService {
   
-  eduURL = environment.URL + 'educacion/';
+  eduURL = 'https://backend-amt.herokuapp.com/educacion/';
 
   constructor(private httpClient: HttpClient) { }
 
