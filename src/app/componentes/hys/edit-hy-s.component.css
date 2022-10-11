@@ -1,0 +1,25 @@
+
+
+.container{
+    padding:20px;
+    background-color:#fcb7af;
+    margin-top:100px;
+    border-radius: 2%;
+    display:flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    
+}
+.form-group{
+    padding: 10px;
+}
+
+#imagen{
+    width:200px;
+    height:200px;
+    align-self: center;
+    border-radius: 50%;
+    
+}

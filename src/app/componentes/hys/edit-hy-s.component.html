@@ -1,6 +1,9 @@
 <div class="container" *ngIf="skill">
     <div class="row">
-        <div>
+        <div class="col-lg-2">
+            <img src="../../../assets/habilidades-sociales.jpg" id="imagen">
+        </div>
+        <div class="col-lg-10">
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="nombre">Nombre de la habilidad</label>
@@ -10,7 +13,7 @@
                     <label for="porcentaje">Porcentaje</label>
                     <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje" required>
                 </div>
-                <button class="btn btn-primary">Actualizar</button>
+                <button class="btn btn-dark">Actualizar</button>
             </form>
         </div>
     </div>
