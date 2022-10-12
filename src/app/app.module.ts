@@ -27,6 +27,8 @@ import { EditAcercadeComponent } from './componentes/acercade/edit-acercade.comp
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { NewproyectoComponent } from './componentes/proyectos/newproyecto.component';
+import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.component';
 
 
 
@@ -51,7 +53,9 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     EditEducacionComponent,
     EditHySComponent,
     NewHySComponent,
-    EditAcercadeComponent
+    EditAcercadeComponent,
+    NewproyectoComponent,
+    EditProyectoComponent
   
     
   ],

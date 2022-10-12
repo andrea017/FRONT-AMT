@@ -15,6 +15,7 @@ export class NewExperienciaComponent implements OnInit {
   constructor(private experienciaService: ExperienciaService, private router: Router) { }
 
   ngOnInit(): void {
+    
   }
 
   onCreate():void {
@@ -25,6 +26,7 @@ export class NewExperienciaComponent implements OnInit {
     alert("Falló");
     this.router.navigate(['']);
   })
+
   }
 
 }

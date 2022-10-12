@@ -1,0 +1,40 @@
+import { Injectable } from '@angular/core';
+import { Storage, ref, uploadBytes, list, getDownloadURL } from '@angular/fire/storage'
+import { listAll } from 'firebase/storage';
+
+
+
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ImageListService {
+  url:string = "";
+  id:number;
+  fileList: any=[];
+
+  constructor(private storage: Storage) { }
+
+  public uploadImage($event:any, name:string, id:number){
+    const file = $event.target.files[id]
+    const imgRef= ref(this.storage,`imagen/` + name)
+    uploadBytes(imgRef, file)
+    .then(response=>{this.getImages()})
+    .catch(error=>console.log(error))
+   }
+
+   getImages(){
+    const imagesRef = ref(this.storage, 'imagen')
+    listAll(imagesRef)
+    .then(async response=>{
+    for(let item of response.items){
+      this.url = await getDownloadURL(item);
+      console.log("La URL es: " + this.url);
+    }
+   })
+   .catch(error=>console.log(error))
+   }
+   
+  
+   
+}

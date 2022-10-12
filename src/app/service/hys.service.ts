@@ -8,8 +8,8 @@ import { Hys } from '../model/hys';
   providedIn: 'root'
 })
 export class HysService {
- //URL='http://localhost:8080/skill/';
-  URL= 'https://backend-amt.herokuapp.com/skill/';
+ URL='http://localhost:8080/skill/';
+ // URL= 'https://backend-amt.herokuapp.com/skill/';
 
   constructor(private httpClient:HttpClient) { }
 
