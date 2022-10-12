@@ -10,13 +10,12 @@ import { listAll } from 'firebase/storage';
 })
 export class ImageListService {
   url:string = "";
-  id:number;
-  fileList: any=[];
+ 
 
   constructor(private storage: Storage) { }
 
-  public uploadImage($event:any, name:string, id:number){
-    const file = $event.target.files[id]
+  public uploadImage($event:any, name:string){
+    const file = $event.target.files[0]
     const imgRef= ref(this.storage,`imagen/` + name)
     uploadBytes(imgRef, file)
     .then(response=>{this.getImages()})
@@ -25,7 +24,7 @@ export class ImageListService {
 
    getImages(){
     const imagesRef = ref(this.storage, 'imagen')
-    listAll(imagesRef)
+    list(imagesRef)
     .then(async response=>{
     for(let item of response.items){
       this.url = await getDownloadURL(item);

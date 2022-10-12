@@ -22,7 +22,7 @@ export class EditProyectoComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    const id = this.activatedRouter.snapshot.params['id'];
+    const id = this.activatedRouter.snapshot.params[''];
     this.proyectoS.detail(id).subscribe(
       data => {
         this.proyecto = data;
@@ -34,7 +34,7 @@ export class EditProyectoComponent implements OnInit {
   }
 
   onUpdate(): void {
-    const id = this.activatedRouter.snapshot.params['id'];
+    const id = this.activatedRouter.snapshot.params[''];
     this.proyecto.img=this.imageListService.url
     this.proyectoS.update(id, this.proyecto).subscribe(data => {
       this.router.navigate(['']);
@@ -45,8 +45,8 @@ export class EditProyectoComponent implements OnInit {
   }
 
   uploadImage($event:any) {
-    const id = this.activatedRouter.snapshot.params['id'];
+    const id = this.activatedRouter.snapshot.params[''];
     const name = "proyecto_" + id;
-    this.imageListService.uploadImage($event, name, id);
+    this.imageListService.uploadImage($event, name);
   }
 }
