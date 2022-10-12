@@ -1,4 +1,8 @@
-.row{
+div{
 background-color:#72A0C1;
-padding:20px;
+
+}
+
+td{
+    align-items: center;
 }
