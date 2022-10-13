@@ -1,5 +1,5 @@
 export class Proyectos {
-    id : number;
+    id? : number;
     nombre: string;
     descripcion: string;
     img : string;

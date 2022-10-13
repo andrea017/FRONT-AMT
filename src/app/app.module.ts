@@ -67,6 +67,7 @@ import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.com
     FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideStorage(() => getStorage()), 
+    
   
     
   ],

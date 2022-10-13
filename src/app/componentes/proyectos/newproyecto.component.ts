@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Proyectos } from 'src/app/model/proyectos';
-import { ImageListService } from 'src/app/service/imageList.service';
+
 import { ProyectosService } from 'src/app/service/proyectos.service';
 
 @Component({
@@ -14,11 +14,11 @@ export class NewproyectoComponent implements OnInit {
   nombre: string = '';
   descripcion:string ='';
   img:string = '';
-  proyecto:Proyectos = null;
+  
  
 
 
-  constructor(public imageListService: ImageListService, private proyectoService: ProyectosService, private router: Router, private activatedRouter:ActivatedRoute) { }
+  constructor(private proyectoService: ProyectosService, private router: Router, private activatedRouter:ActivatedRoute) { }
 
   ngOnInit(): void {
     
@@ -38,13 +38,5 @@ export class NewproyectoComponent implements OnInit {
   })
   }
 
-  uploadImage($event:any) {
-    const id = this.activatedRouter.snapshot.params[''];
-    const name = "proyecto_" + id;
-    this.imageListService.uploadImage($event, name);
-    
-    
-  }
-
-
+ 
 }

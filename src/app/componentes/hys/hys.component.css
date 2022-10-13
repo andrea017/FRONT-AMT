@@ -6,3 +6,30 @@ background-color:#72A0C1;
 td{
     align-items: center;
 }
+
+.espaciador{
+    padding:30px;
+}
+.container-fluid{
+    padding-left:20px;
+}
+
+h2{
+    margin-left:20px;
+}
+
+h4{
+    text-shadow: 3px 3px 3px #585858;
+}
+h6{
+    color:#414a4c;
+    
+}
+h5,h6{
+    margin-top:5px;
+}
+
+.card{
+    border-color: #c0c0c0;
+    border-bottom: none;
+}

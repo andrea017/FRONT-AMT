@@ -2,16 +2,25 @@
     padding:20px;
     background-color:#72A0C1;
 }
-.contenedor{
+.conteiner{
     width:auto;
 }
 
-.parte1, .parte2{
-    display:inline-block;
-    text-align:justify;
+/*.img-proyecto{
+    box-shadow:10px 10px 30px #000000;
+}*/
+
+.espaciador{
+    padding:20px;
 }
 
+div{
+    background-color:#72A0C1; 
+ }
 
-.img-proyecto{
-    box-shadow:10px 10px 30px #000000;
+ .card{
+    border-color: #c0c0c0;
+    border-bottom: none;
+    border-left:none;
+    border-right:none;    
 }
