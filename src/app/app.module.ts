@@ -68,8 +68,6 @@ import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.com
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideStorage(() => getStorage()), 
     
-  
-    
   ],
   providers: [
     interceptorProvider

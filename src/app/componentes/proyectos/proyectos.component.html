@@ -4,27 +4,28 @@
     <h2>Proyectos realizados</h2> 
     </div>
     <div class="col-lg-1">
-        <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged"><i class="bi bi-plus-circle"></i></button>
+        <button type="button" class="btn btn-dark" routerLink="/nuevoproyecto" *ngIf="isLogged"><i class="bi bi-plus-circle"></i></button>
     </div>
 </div>
 
 <div class="container-fluid">
     <div class="card">
-        <div class="card border-secundary mb-3" style="max-width: 18rem;" *ngFor="let Proyectos of proyecto">
-            <div>
-                <div class="card-header bg-transparent border-success">{{Proyectos.nombre}}</div>
-            <div class="card-body text-success">
-            <p class="card-text">{{Proyectos.descripcion}}</p>
+        <div class="row no-gutters" *ngFor="let Proyectos of proyecto">
+            <div class="col-lg-2" id="card-img">
+                <img class="img" [src]="Proyectos.img">
             </div>
-            <div class="card-footer bg-transparent border-success"><button class="btn btn-primary">Ir a proyecto</button>
-                <button class="btn btn-dark" routerLink="/editproyecto/{{Proyectos.id}}" *ngIf="isLogged"><i class="bi bi-pencil-fill"></i></button>
-                <button class="btn btn-danger" (click)="delete(Proyectos.id)" *ngIf="isLogged"><i class="bi bi-trash-fill"></i></button>
+            <div class="col-lg-10">
+                <div class="card-body">
+                    <h4 class="card-title">{{Proyectos.nombre}}</h4>
+                    <h5 class="card-subtitle">{{Proyectos.descripcion}}</h5>
+                </div>
+             <div class="col-lg-12" id="buttons"><button class="btn btn-primary">Ir a proyecto</button>
+                    <button class="btn btn-dark" routerLink="/editproyecto/{{Proyectos.id}}" *ngIf="isLogged"><i class="bi bi-pencil-fill"></i></button>
+                    <button class="btn btn-danger" (click)="delete(Proyectos.id)" *ngIf="isLogged"><i class="bi bi-trash-fill"></i></button>
             </div>
-                
-        </div>
-                 
-          
+            </div>
+            <div class="espaciador-interno"></div>
         </div>
     </div>
+    
 </div>
-

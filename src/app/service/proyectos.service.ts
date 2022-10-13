@@ -3,12 +3,14 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Proyectos } from '../model/proyectos';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class ProyectosService {
   URL='http://localhost:8080/proyectos/';
   //URL = 'https://backend-amt.herokuapp.com/proyectos/';
+  
 
   constructor(private httpClient: HttpClient) { }
 
@@ -31,4 +33,6 @@ export class ProyectosService {
   public delete(id:number): Observable<any>{
     return this.httpClient.delete<any>(this.URL + `delete/${id}`);
   }
+
+  
 }

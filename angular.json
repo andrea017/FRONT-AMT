@@ -105,5 +105,7 @@
       }
     }
   },
-  "defaultProject": "portfolio_web"
+  "cli": {
+    "analytics": false
+  }
 }
