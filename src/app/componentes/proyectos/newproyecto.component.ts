@@ -13,17 +13,15 @@ export class NewproyectoComponent implements OnInit {
   nombre: string = '';
   descripcion:string ='';
   img:string = '';
-  proyecto:Proyectos=null;
-  private image:any;
-
-
+  link:string='';
+ 
   constructor(private proyectoService: ProyectosService, private router: Router, private activatedRouter:ActivatedRoute) { }
 
   ngOnInit(): void {
    }
 
   onCreate():void {
-    const proyecto = new Proyectos(this.nombre, this.descripcion, this.img);
+    const proyecto = new Proyectos(this.nombre, this.descripcion, this.img, this.link);
    this.proyectoService.save(proyecto).subscribe(data => {alert ("Proyecto añadido");
     this.router.navigate(['']);
   }, err =>{
@@ -32,9 +30,6 @@ export class NewproyectoComponent implements OnInit {
    })
   }
 
-  handleImag(event:any): void {
-    this.image=event.target.files[0];
-    }
-
+  
  
 }

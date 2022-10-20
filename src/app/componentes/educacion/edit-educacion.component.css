@@ -1,1 +1,31 @@
 
+div{
+    background-color: #B9D9EB;
+}
+
+.container{
+    padding:50px;
+    margin-top:50px;
+    width:50rem;
+    border-radius:8px;
+}
+
+h2{
+    text-align:center;
+}
+
+.form-group{
+    padding:10px;
+}
+
+input[type=text] {
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius:0px;
+  }
+ 
+  form label{
+	font-weight:bold;
+	display:inline-block;
+}

@@ -1,25 +1,31 @@
 
+div{
+    background-color: #B9D9EB;
+}
 
 .container{
-    padding:20px;
-    background-color:#72A0C1;
-    margin-top:100px;
-    border-radius: 2%;
-    display:flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    flex-direction: column-reverse;
-    justify-content: center;
-    
-}
-.form-group{
-    padding: 10px;
+    padding:50px;
+    margin-top:50px;
+    width:50rem;
+    border-radius:8px;
 }
 
-#imagen{
-    width:200px;
-    height:200px;
-    align-self: center;
-    border-radius: 50%;
-    
+h2{
+    text-align:center;
+}
+
+.form-group{
+    padding:10px;
+}
+
+input[type=text] {
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius:0px;
+  }
+ 
+  form label{
+	font-weight:bold;
+	display:inline-block;
 }

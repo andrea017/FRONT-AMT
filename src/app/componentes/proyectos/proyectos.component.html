@@ -19,7 +19,7 @@
                     <h4 class="card-title">{{Proyectos.nombre}}</h4>
                     <h5 class="card-subtitle">{{Proyectos.descripcion}}</h5>
                 </div>
-             <div class="col-lg-12" id="buttons"><button class="btn btn-primary">Ir a proyecto</button>
+             <div class="col-lg-12" id="buttons"><a [href]="Proyectos.link"><button class="btn btn-primary">Ir a proyecto</button></a>
                     <button class="btn btn-dark" routerLink="/editproyecto/{{Proyectos.id}}" *ngIf="isLogged"><i class="bi bi-pencil-fill"></i></button>
                     <button class="btn btn-danger" (click)="delete(Proyectos.id)" *ngIf="isLogged"><i class="bi bi-trash-fill"></i></button>
             </div>
