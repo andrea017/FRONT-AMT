@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Proyectos } from '../model/proyectos';
 
 
@@ -8,8 +9,8 @@ import { Proyectos } from '../model/proyectos';
   providedIn: 'root'
 })
 export class ProyectosService {
-  //URL='http://localhost:8080/proyectos/';
- URL = 'https://backend-amt.herokuapp.com/proyectos/';
+  //URL= environment.URL + 'proyectos/';
+  URL= 'https://backend-amt.herokuapp.com/proyectos/';
   
 
   constructor(private httpClient: HttpClient) { }

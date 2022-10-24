@@ -24,9 +24,27 @@ h5,h6{
     margin-top:5px;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+    align-items: center;
+    border:none;
+    }
+
+ hr{
+    
+height: 2px;
+width: 98%;
+background-color: white;
+border:none;
+margin-top:-1px;
+margin-left:15px;
+}
+
 .card{
-    border-color: #c0c0c0;
-    border-bottom: none;
+    margin-left:2em;
+    display:grid;
+    gap: 0.5em;
+    grid-template-columns:repeat(auto-fit,minmax(15rem,90%));
 }
 
 .img {

@@ -1,13 +1,13 @@
 <div class="espaciador"></div>
-<div class="row">
-    <div class="col-lg-11" id="titulo">
+<div class="row" id="titulo">
+    <div class="col-lg-11">
     <h2>Educación</h2> 
     </div>
     <div class="col-lg-1">
         <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged"><i class="bi bi-plus-circle"></i></button>
     </div>
 </div>
-
+<hr>
 <div class="container-fluid">
     <div class="card">
         <div class="row no-gutters" *ngFor="let Educacion of educacion" >
@@ -15,7 +15,7 @@
                 <img class="img" [src]="Educacion.logoE">
             </div>
             <div class="col-sm-10">
-                <div class="card-body">
+                <div class="card-body" id="cards" >
                     <h4 class="card-title">{{Educacion.nombreE}}</h4>
                     <h5 class="card-subtitle">{{Educacion.descripcionE}}</h5>
                     <h6 class="card-date">{{Educacion.fechaE}}</h6>

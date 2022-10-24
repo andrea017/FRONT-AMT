@@ -7,6 +7,22 @@ div{
     text-align: center;
 }
 
+.bienvenida{
+z-index: 1;
+margin-top:-550px;
+padding:50px;
+background-color:transparent;
+height: 150px;
+width:30em;
+}
+
+h1{
+    font-size:4.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    line-height:1.5em;
+}
+
 /*Foto de perfil*/
 @media(max-width:576px){
     #profilepic{

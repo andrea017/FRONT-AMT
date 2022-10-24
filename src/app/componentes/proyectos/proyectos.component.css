@@ -24,9 +24,18 @@ div{
      margin-top:5px;
  }
  
+ hr{
+    
+    height: 2px;
+    width: 98%;
+    background-color: white;
+    border:none;
+    margin-top:-1px;
+    margin-left:15px;
+    }
  .card{
-     border-color: #c0c0c0;
-     border-bottom: none;
+    
+     border: none;
  }
  
  .img {

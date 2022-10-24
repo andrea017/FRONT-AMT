@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 import { Hys } from '../model/hys';
 
@@ -8,8 +9,8 @@ import { Hys } from '../model/hys';
   providedIn: 'root'
 })
 export class HysService {
-// URL='http://localhost:8080/skill/';
-  URL= 'https://backend-amt.herokuapp.com/skill/';
+//URL= environment.URL + 'skill/';
+URL= 'https://backend-amt.herokuapp.com/skill/';
 
   constructor(private httpClient:HttpClient) { }
 

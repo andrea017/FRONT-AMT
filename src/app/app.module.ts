@@ -30,7 +30,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
 import { NewproyectoComponent } from './componentes/proyectos/newproyecto.component';
 import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.component';
 import { NewUserComponent } from './componentes/login/new-user.component';
-
+import{DragDropModule} from '@angular/cdk/drag-drop';
 
 
 
@@ -69,7 +69,7 @@ import { NewUserComponent } from './componentes/login/new-user.component';
     FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideStorage(() => getStorage()), 
-    
+    DragDropModule
   ],
   providers: [
     interceptorProvider
