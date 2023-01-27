@@ -9,8 +9,8 @@ import { Proyectos } from '../model/proyectos';
   providedIn: 'root'
 })
 export class ProyectosService {
-  URL= environment.URL + 'proyectos/';
-  //URL= 'https://backend-amt.herokuapp.com/proyectos/';
+  //URL= environment.URL + 'proyectos/';
+  URL= 'https://backend-amt.onrender.com/proyectos/';
   
 
   constructor(private httpClient: HttpClient) { }

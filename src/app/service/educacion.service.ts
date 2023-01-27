@@ -8,8 +8,8 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
- eduURL=environment.URL + 'educacion/';
- //eduURL= 'https://backend-amt.herokuapp.com/educacion/';
+ //eduURL=environment.URL + 'educacion/';
+ eduURL= 'https://backend-amt.onrender.com/educacion/';
   
 
   constructor(private httpClient: HttpClient) { }

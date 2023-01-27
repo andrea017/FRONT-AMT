@@ -8,8 +8,8 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class ExperienciaService {
-expURL=environment.URL + 'explab/';
-//expURL= 'https://backend-amt.herokuapp.com/explab/';
+//expURL=environment.URL + 'explab/';
+expURL= 'https://backend-amt.onrender.com/explab/';
 
 
   constructor(private httpClient: HttpClient) { }
