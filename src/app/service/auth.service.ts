@@ -11,7 +11,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 })
 export class AuthService {
  //authURL= environment.URL+ 'auth/';
-   authURL= 'https://backend-amt.onrender.com/auth/';
+   authURL= 'https://backend-amt.onrender.com/auth';
   
   
 
